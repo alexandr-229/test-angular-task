@@ -1,0 +1,16 @@
+<main>
+    <h2>Select a currency and enter the amount</h2>
+    <div>
+        <select name="name" id="id" title="select" (input)="select($event)">
+            <option>USD</option>
+            <option>EUR</option>
+            <option>PLN</option>
+            <option>UAH</option>
+        </select>
+        <input type="number" title="input" (input)="input($event)"/>
+    </div>
+    <div>
+        <h2>Result:</h2>
+        <p>{{value.toFixed(2)}} UAH</p>
+    </div>
+</main>
